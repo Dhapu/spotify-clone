@@ -125,6 +125,10 @@ const DetailsContainer = styled.div`
   padding: 20px;
   border-radius: 10px;
   margin-top: 5px;
+
+   @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const SongInfo = styled.div`
@@ -147,6 +151,18 @@ font-weight: 400;
 line-height: 24px;
 text-align: left;
   }
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    p {
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
 `;
 
 const CoverImage = styled.img`
@@ -155,6 +171,11 @@ const CoverImage = styled.img`
   margin-top: -20px;
   margin-bottom: 10px;
   border-radius: 8px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: auto;
+  }
 `;
 
 const Slider = styled.input`
@@ -194,6 +215,10 @@ const Slider = styled.input`
     border-radius: 50%;
     cursor: pointer;
   }
+ @media (max-width: 768px) {
+    width: 100%;
+  }
+
 `;
 
 const Controls = styled.div`
@@ -203,6 +228,11 @@ const Controls = styled.div`
   width: 480px;
   align-items: center;
   justify-content: space-between;
+
+   @media (max-width: 768px) {
+    gap: 10px;
+    width: 100%;
+  }
 `;
 
 const Ellipse = styled.div`
